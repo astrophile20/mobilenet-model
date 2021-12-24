@@ -1,0 +1,61 @@
+ <html>
+
+ <head>
+   <title>Image Recognizer</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+
+ </head>
+
+ <body>
+   <div class="container">
+
+     <center>
+       <h1 class="btn heading"> Image Recognizer </h1>
+       <br><br>
+       <p style="font-size: 30px; font-family: 'Lobster', cursive;"> The model is trained to identify the following objects: </p>
+       <br>
+
+       <b class="objects">
+         <h6>Pen</h6>
+         <h6>Speaker</h6>
+         <h6>Phone</h6>
+         <h6>CD</h6>
+       </b>
+
+       <br> <br>
+
+       <div style="display: flex;">
+       <div class="camera" id="live-camera"></div>
+       <br><br>
+       <div class="camera" id="show-image"></div>
+       </div>
+
+       <br>                              
+
+       <div style="display: flex;">
+       <br><br>
+       <button onclick="take_snapshot()"> Capture Image </button>
+       <br><br>
+       <button onclick="identify_object()"> Identify Object </button>
+       <br><br>
+       </div>
+
+       <div id="show-results">
+       <p style="font-size: 22px;"> Object: <span id="display_object"></span></p>
+       <p style="font-size: 22px;"> Accuracy: <span id="display_accuracy"></span></p>
+       </div>
+     </center>
+
+   </div>
+   <script src="main.js"></script>
+
+ </body>
+
+ </html>

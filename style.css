@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: black;
+    border-color: black;
+    border-style: double;
+    border-width: 12px;
+}
+
+.heading {
+    font-size: 45px;
+    font-family: 'Rock Salt', cursive;
+    color: black;
+}
+
+.camera {
+    width: 350px;
+    height: 300px;
+    border-color: black;
+    border-style: dashed;
+    border-width: 3px;
+    margin-left: 155px;
+}
+
+button {
+    margin-left: 250px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: rgb(243, 144, 6);
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    font-family: cursive;
+}
+
+button:hover {
+    background-color: teal;
+    color: whitesmoke;
+    box-shadow: 0 5px 5px 0 rgb(41, 13, 13), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.objects {
+    font-family: 'Patrick Hand', cursive;
+}
+
+h6 {
+    font-size: 70px;
+    display: inline-flex;
+    margin-left: 80px;
+    background: url(watercolor-brush-stroke-banner-var-3.png);
+    background-repeat: no-repeat;
+    background-size: 80% 95%;
+    background-position: center;
+}
+
+#display_object {
+    font-weight: bold;
+}
+
+#display_accuracy {
+    font-weight: bold;
+}
